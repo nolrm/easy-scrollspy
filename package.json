@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "minify": "terser dist/scrollspy.js --compress --mangle --source-map -o dist/scrollspy.min.js"
+    "build": "tsc && npm run minify",
+  "minify": "terser dist/scrollspy.js --compress --mangle --source-map -o dist/scrollspy.min.js",
+  "test": "jest"
   },
   "keywords": [],
   "author": "Marlon M",
