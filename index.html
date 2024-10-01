@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScrollSpy Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    nav a { padding: 10px; display: inline-block; color: black; text-decoration: none; }
+    nav a.active { color: red; }
+    section { height: 100vh; padding: 20px; }
+    #section1 { background-color: lightblue; }
+    #section2 { background-color: lightgreen; }
+    #section3 { background-color: lightcoral; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </nav>
+
+  <section id="section1">Section 1</section>
+  <section id="section2">Section 2</section>
+  <section id="section3">Section 3</section>
+
+  <script src="./dist/scrollspy.min.js"></script>
+  <script>
+    new ScrollSpy('nav a', { activeClass: 'active', offset: 50 });
+  </script>
+
+</body>
+</html>
